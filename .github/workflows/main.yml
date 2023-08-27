@@ -21,7 +21,7 @@ jobs:
         run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWOED }}
 
       - name: "Building docker iameges"
-        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/gegeImage .
+        run: docker build -t ${{ secrets.DOCKER_USERNAME }}/gegeimage .
 
       - name: "push to docker hub"
-        run: docker push ${{ secrets.DOCKER_USERNAME }}/gegeImage
+        run: docker push ${{ secrets.DOCKER_USERNAME }}/gegeimage
